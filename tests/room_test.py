@@ -16,5 +16,9 @@ class TestRoom(unittest.TestCase):
     def test_check_in_guest(self):
         self.assertEqual(["Sheila"], self.room_1.check_in_guest(self.guest_2.name))
 
-    def test_check_out_guest(self):
-        self.assertEqual(["Sheila"], self.room_1.check_out_guest(self.guest_2.name))
+    # def test_check_out_guest(self):
+    #     self.assertEqual([], self.room_1.check_out_guest(self.guest_2.name))
+        
+    def test_add_song(self):
+        self.assertEqual(["I Will Survive"], self.room_1.add_song("I Will Survive"))
+
