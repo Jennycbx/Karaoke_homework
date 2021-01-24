@@ -7,14 +7,16 @@ class Room:
 
     def check_room_quantity(self):
         return len(self.guests)
+
+    def check_room_guests(self):
+        return self.guests
         
     def check_in_guest(self, guest):
         self.guests.append(guest)
-        return self.guests
         
     # def check_out_guest(self, guest):
     #     self.guests.remove(guest)
-    #     return self.guests
+    
 
     def add_song(self, song):
         self.songs.append(song)
